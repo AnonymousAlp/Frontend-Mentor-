@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+        margin: 0;
+        font-family: "Hanken Grotesk";
+        font-size:18px ;
+        box-sizing: border-box;
+        width: 1440px;
+    }
+    .container{
+        text-align: center;
+        background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        border-radius: 30px;
+        color: hsl(241, 100%, 89%);
+        width: 720px;
+        display: inline-block;
+    }
+    .num{
+        font-weight: 800;
+        font-size: 60px;
+        margin-bottom: 0;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 0;
+    }
+    .text{
+        padding-top: 10px;
+        font-weight: 800;
+        color: hsl(0, 0%, 100%);
+        margin-bottom:5px;
+    }
+    .text1{
+        padding-top: 30px;
+    }
+    .numbers{
+        border-color: hsla(256, 72%, 46%, 1);
+        border-style: solid;
+        border-radius: 360%;
+        background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+        margin-left: 36%;
+        width:200px;
+     }
+     .summary{
+         font-weight: bold;
+         font-weight: 400;
+     }
+     .svg{
+         display: inline-block;
+         margin-right: 15px;
+     }
+     .text2{
+         display: inline-block;
+         margin-right: 10px;
+         padding-left: 15px;
+     }
+     .num3{
+         display: inline-block;
+         margin-left: 450px;
+         color: hsl(241, 100%, 89%);
+     }
+     .num4{
+         color: black;
+     }
+     .num5{
+         display: inline-block;
+         margin-left: 465px;
+         color: hsl(241, 100%, 89%);
+     }
+     .reaction{
+         color: hsl(0, 100%, 67%);
+         background-color: hsla(0, 100%, 67%,0.2);
+         border-radius: 10px;
+         padding-left: 15px;
+     }
+     .memory{
+         color: hsl(39, 100%, 56%);
+         background-color: hsla(39, 100%, 56%,0.2);
+         margin-top: 15px;
+         border-radius: 10px;
+         padding-left: 15px;
+     }
+     .Verbal{
+         color: hsl(166, 100%, 37%);
+         background-color: hsla(166, 100%, 37%,0.2);
+         margin-top: 15px;
+         border-radius: 10px;
+         padding-left: 15px;
+     }
+     .Visual{
+         color: hsl(234, 85%, 45%);
+         background-color: hsla(234, 85%, 45%,0.2);
+         border-radius: 10px;
+         margin-top: 15px;
+         padding-left: 15px;
+     }
+     .continue{
+         background-color: hsl(224, 30%, 27%);
+         border:2px solid hsl(224, 30%, 27%);
+         width: 100%px;
+         border-radius: 30px;
+         padding-left: 300px;
+         margin-top: 15px;
+     }
+     .container2{
+         margin-left: 10px;
+         margin-right: 10px;
+         margin-bottom: 15px;
+         width: 700px;
+         float: right;
+         display: inline-block;
+     }
+     a{
+         text-decoration: none;
+         color: hsl(0, 0%, 100%);
+     }
+      .continue:hover{
+         background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+         border:2px solid ;
+         width: 100%;
+         border-radius: 30px;
+         padding-left: 300px;
+     }
+     .clearfix{
+        content: ***;
+        display: table;
+        clear: both;
+     }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <p class="text1">Your Result</p>
+      <div class="numbers">
+        <p class="num">76</p>
+        <p class="num1">of 100</p>
+      </div>    
+      <p class="text">Great</p>
+      <p>You scored higher than 65% of<br> the people who have taken<br> these tests.
+      </p>
+  </div>
+  <div class="container2">
+      <p class="summary">Summary</p>
+      <div class="reaction">
+          <img src="/assets/images/icon-reaction.svg" alt="icon-reaction"><p
+          class="text2">Reaction</p>
+          <p class="num3"><span class="num4">80</span>/100</p>
+      </div>
+       <div class="memory">
+          <img src="assets/images/icon-memory.svg" alt="icon-memory"><p
+          class="text2">Memory</p>
+          <p class="num3"><span class="num4">92</span>/100</p>
+      </div>
+       <div class="Verbal">
+          <img src="/assets/images/icon-verbal.svg" alt="icon-verbal"><p
+          class="text2">Verbal</p>
+          <p class="num5"><span class="num4">61</span>/100</p>
+      </div>
+       <div class="Visual">
+          <img src="/assets/images/icon-visual.svg" alt="icon-visual"><p
+          class="text2">Visual</p>
+          <p class="num5"><span class="num4">72</span>/100</p>
+           </div>
+      <div class="continue">
+          <p><a href="#">Continue</a></p>
+      </div>
+   </div>
+  <div class="clearfix"></div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/AnonymousAlp">Carlos</a>.
+  </div>
+</body>
+</html>
